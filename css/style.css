@@ -1,0 +1,145 @@
+@font-face {
+    font-family: myFont;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: hsl(234, 29%, 20%);  
+}
+.card{
+    font-family: myFont;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+}
+.left {
+    padding: 40px;
+    margin-top: 1.5rem;
+}
+.right {
+    max-height: 37rem;
+}
+ul {
+    list-style-image: url("./images/icon-list.svg");
+}   
+form {
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+input {
+   font-family: myFont;
+   border-radius: 0.5rem;
+   padding: 15px;
+   margin-bottom: 20px;
+   border: 1px solid  hsl(231, 7%, 60%);
+}
+
+h1{
+    font-size: 40px;
+}
+.submit {
+    font-family: myFont;
+    background: hsl(234, 29%, 20%) ;
+    color: white;
+    border-radius: 0.5rem;
+    border: 0;
+    padding: 15px;
+}
+.submit:hover {
+    background:hsl(4, 100%, 67%);
+    cursor: pointer;
+}
+@media screen and (max-width:650px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0;
+    }
+    .right {
+      content: url("./images/illustration-sign-up-mobile.svg");
+    }
+    
+}
+.card-2{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+    padding:3rem ;
+    border-radius: 2rem; 
+}
+img {
+    margin-bottom: 2rem;
+}
+.card-2{
+    margin-bottom: 2rem;
+}
+h1 {
+    font-weight: 900;
+    font-family: myFont;
+    font-size: 50px;
+    color:hsl(234, 29%, 20%);
+    margin-bottom: 2rem;
+    line-height: 3rem;
+}
+.ok {
+    font-family: myFont;
+    font-size: 15px;
+    color:hsl(234, 29%, 20%) ;
+    margin-bottom: 2rem;
+   
+}
+span{
+    font-weight: bolder;
+    
+}
+.btn {
+    font-family: myFont;
+    background-color:hsl(234, 29%, 20%);
+    color: white;
+    padding: 23px;
+}
+.btn:hover {
+    background:hsl(4, 100%, 67%);
+    cursor: pointer;
+}
+.hide {
+    display: none;
+}
+
+@media screen and (max-width:650px) {
+    .card-2{
+        height: 950px;
+        border-radius: 0;
+ 
+    }
+    .ok {
+        margin-bottom: 25rem;
+    }
+ 
+}
+
+
+
+
+
